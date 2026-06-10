@@ -1,0 +1,4 @@
+gateway_id,name
+1,Stripe
+2,PayPal
+3,Razorpay

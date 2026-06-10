@@ -1,0 +1,501 @@
+﻿movie_id,title,genre,rating,status,poster_image_url
+1,Avatar,Sci-Fi,5.1,Coming Soon,https://placekitten.com/410/120
+2,Nine,Comedy,7.5,Now Showing,https://placekitten.com/80/766
+3,Hard Luck,Horror,1.4,Now Showing,https://dummyimage.com/718x260
+4,The Officers' Ward,Comedy,1.7,Coming Soon,https://dummyimage.com/884x721
+5,You Are So Beautiful,Horror,5.9,Coming Soon,https://dummyimage.com/882x449
+6,It's Complicated,Horror,9,Now Showing,https://picsum.photos/886/659
+7,Sherlock Holmes,Drama,2.8,Coming Soon,https://placekitten.com/473/484
+8,Crazy Heart,Action,4.2,Now Showing,https://picsum.photos/208/527
+9,The Art of War II: Betrayal,Horror,8.2,Now Showing,https://placekitten.com/919/509
+10,The Last Station,Drama,5.8,Coming Soon,https://dummyimage.com/579x747
+11,Too Shy to Try,Action,2.8,Now Showing,https://dummyimage.com/180x223
+12,Alvin and the Chipmunks: The Squeakquel,Action,6.7,Coming Soon,https://picsum.photos/520/651
+13,Uncertainty,Action,1.7,Now Showing,https://picsum.photos/14/276
+14,Guru,Horror,8.1,Coming Soon,https://picsum.photos/204/337
+15,After Death,Sci-Fi,8.7,Now Showing,https://placekitten.com/534/401
+16,Film Geek,Drama,3.1,Coming Soon,https://picsum.photos/155/93
+17,In a Year with 13 Moons,Action,5.6,Now Showing,https://placekitten.com/229/528
+18,The Fallen Sparrow,Drama,5.6,Coming Soon,https://picsum.photos/529/682
+19,Beyond a Reasonable Doubt,Comedy,6.6,Now Showing,https://dummyimage.com/964x617
+20,The Profit,Horror,3.9,Now Showing,https://picsum.photos/39/1016
+21,Looking for Eric,Drama,9.3,Now Showing,https://placekitten.com/142/481
+22,American Pie Presents: The Book of Love,Sci-Fi,7,Now Showing,https://picsum.photos/966/356
+23,Trapeze,Comedy,5.3,Now Showing,https://dummyimage.com/507x198
+24,There Was a Crooked Man...,Sci-Fi,4.5,Coming Soon,https://picsum.photos/580/7
+25,The Battle of the River Plate,Comedy,1.1,Now Showing,https://dummyimage.com/83x99
+26,Marriage Italian Style,Drama,10,Coming Soon,https://picsum.photos/417/104
+27,The Minion,Drama,2,Now Showing,https://picsum.photos/391/985
+28,Sweepers,Action,2,Coming Soon,https://picsum.photos/674/745
+29,Lady Windermere's Fan,Comedy,6.6,Coming Soon,https://picsum.photos/566/962
+30,Not Your Typical Bigfoot Movie,Comedy,6.5,Now Showing,https://placekitten.com/509/115
+31,The Good Life,Drama,6.7,Coming Soon,https://dummyimage.com/851x1020
+32,Variety,Action,3.1,Coming Soon,https://placekitten.com/458/631
+33,Out 1: Spectre,Horror,6.4,Coming Soon,https://dummyimage.com/183x277
+34,Moana,Comedy,8.1,Now Showing,https://picsum.photos/473/571
+35,A Diary for Timothy,Horror,6.2,Now Showing,https://picsum.photos/117/24
+36,Under the Bridges,Comedy,8.7,Coming Soon,https://placekitten.com/445/924
+37,Bridge of Dragons,Horror,5.8,Coming Soon,https://picsum.photos/603/882
+38,Storm Catcher,Action,4.1,Now Showing,https://picsum.photos/413/846
+39,By the Bluest of Seas,Horror,7.4,Coming Soon,https://placekitten.com/918/983
+40,"H.M. Pulham, Esq.",Drama,6.1,Coming Soon,https://dummyimage.com/824x40
+41,Clash of the Wolves,Sci-Fi,7.2,Coming Soon,https://placekitten.com/781/658
+42,Sorority Babes in the Slimeball Bowl-O-Rama,Comedy,8.1,Now Showing,https://placekitten.com/296/199
+43,Jill Rips,Sci-Fi,5.6,Coming Soon,https://dummyimage.com/757x479
+44,Pronto,Drama,7,Coming Soon,https://dummyimage.com/396x130
+45,Carriers,Comedy,3.8,Coming Soon,https://placekitten.com/425/199
+46,Aaja Nachle,Action,9.2,Coming Soon,https://placekitten.com/402/285
+47,The Friends of Eddie Coyle,Sci-Fi,9.5,Now Showing,https://dummyimage.com/913x71
+48,Rocker,Action,4,Coming Soon,https://placekitten.com/510/853
+49,Mayerling,Horror,3.9,Coming Soon,https://picsum.photos/51/625
+50,Toute une nuit,Drama,6.5,Now Showing,https://picsum.photos/624/230
+51,Flame of My Love,Action,9,Coming Soon,https://picsum.photos/156/374
+52,The Song of Ceylon,Sci-Fi,4.3,Now Showing,https://placekitten.com/817/161
+53,Masquerade in Vienna,Action,6.6,Now Showing,https://placekitten.com/955/652
+54,Too Early/Too Late,Action,3.1,Now Showing,https://dummyimage.com/714x19
+55,My Apprenticeship,Comedy,8.9,Now Showing,https://dummyimage.com/683x690
+56,Piter FM,Drama,2.4,Coming Soon,https://placekitten.com/939/496
+57,Pontypool,Sci-Fi,5.9,Now Showing,https://picsum.photos/630/698
+58,Playmobil: The Secret of Pirate Island,Drama,4.3,Now Showing,https://placekitten.com/813/798
+59,Big Pun: The Legacy,Drama,8,Coming Soon,https://picsum.photos/884/120
+60,Agent Red,Action,5.1,Coming Soon,https://placekitten.com/643/945
+61,The Last Patrol,Sci-Fi,9.5,Now Showing,https://picsum.photos/627/494
+62,The Girl in the Park,Horror,9.7,Now Showing,https://picsum.photos/8/771
+63,Command Performance,Sci-Fi,4.1,Coming Soon,https://placekitten.com/352/555
+64,Direct Contact,Sci-Fi,7.9,Coming Soon,https://picsum.photos/296/94
+65,The Matriarch,Sci-Fi,3.3,Now Showing,https://dummyimage.com/585x810
+66,Land of the Pharaohs,Action,2.2,Coming Soon,https://picsum.photos/966/347
+67,Heart of Midnight,Drama,9,Now Showing,https://picsum.photos/543/717
+68,The Sun Also Rises,Action,3.8,Now Showing,https://picsum.photos/31/970
+69,Youth in Revolt,Drama,2.4,Coming Soon,https://placekitten.com/681/797
+70,Daybreakers,Action,5.5,Now Showing,https://placekitten.com/42/549
+71,The Milk of Sorrow,Comedy,7.6,Now Showing,https://dummyimage.com/542x645
+72,The Age of Stupid,Comedy,8.1,Coming Soon,https://picsum.photos/212/636
+73,Missionary Man,Action,6.3,Now Showing,https://dummyimage.com/175x379
+74,Diamond Dogs,Drama,8.1,Now Showing,https://picsum.photos/285/111
+75,Hachi: A Dog's Tale,Sci-Fi,5.2,Coming Soon,https://dummyimage.com/946x666
+76,Twogether,Comedy,1.4,Now Showing,https://picsum.photos/308/604
+77,Enid Is Sleeping,Drama,1.9,Now Showing,https://placekitten.com/471/206
+78,10 MPH,Horror,3,Now Showing,https://placekitten.com/249/496
+79,"The Prophet, the Gold, and the Transylvanians",Comedy,9.2,Now Showing,https://picsum.photos/1003/304
+80,Leap Year,Horror,9.4,Coming Soon,https://picsum.photos/327/749
+81,The Book of Eli,Action,7.9,Now Showing,https://placekitten.com/65/678
+82,The Girl Who Kicked the Hornet's Nest,Horror,8.9,Now Showing,https://picsum.photos/365/778
+83,Tickets,Horror,6.8,Now Showing,https://placekitten.com/780/182
+84,Hickey & Boggs,Sci-Fi,5,Now Showing,https://placekitten.com/23/714
+85,Mister Johnson,Horror,8.9,Coming Soon,https://dummyimage.com/422x356
+86,The Innocent,Horror,5.5,Now Showing,https://dummyimage.com/525x762
+87,A Prophet,Drama,3.3,Coming Soon,https://placekitten.com/844/878
+88,"Man, Woman and Beast",Drama,8.9,Coming Soon,https://dummyimage.com/838x380
+89,A Guide for the Married Man,Comedy,6,Now Showing,https://dummyimage.com/411x831
+90,Dead Time,Comedy,2.7,Coming Soon,https://picsum.photos/361/504
+91,The Phantom Lover,Horror,7,Coming Soon,https://placekitten.com/464/603
+92,Staten Island,Sci-Fi,4.6,Now Showing,https://dummyimage.com/255x435
+93,Princess,Horror,9,Now Showing,https://placekitten.com/267/203
+94,Collapse,Sci-Fi,8,Coming Soon,https://picsum.photos/415/29
+95,Last Resort,Horror,3.8,Coming Soon,https://dummyimage.com/833x146
+96,The Yacoubian Building,Horror,1.4,Now Showing,https://picsum.photos/614/563
+97,Metal Gear Solid: Philanthropy,Sci-Fi,4.1,Coming Soon,https://placekitten.com/506/279
+98,My One and Only,Comedy,7.6,Now Showing,https://dummyimage.com/410x585
+99,Birdsong,Comedy,9.8,Now Showing,https://dummyimage.com/703x862
+100,The Maiden Heist,Drama,1.9,Coming Soon,https://picsum.photos/547/780
+101,Hidden Agenda,Sci-Fi,4.1,Coming Soon,https://picsum.photos/821/504
+102,Detention,Drama,6.6,Coming Soon,https://picsum.photos/997/348
+103,I Live My Life,Horror,7,Coming Soon,https://placekitten.com/344/251
+104,The V.I.P.s,Action,3.8,Now Showing,https://placekitten.com/711/412
+105,Flavor of Green Tea Over Rice,Horror,2.9,Now Showing,https://picsum.photos/344/334
+106,Louie Bluie,Drama,6.3,Coming Soon,https://picsum.photos/1009/705
+107,Ernest Goes to School,Action,3.6,Coming Soon,https://dummyimage.com/608x862
+108,Direct Action,Action,2,Now Showing,https://dummyimage.com/93x138
+109,The Defender,Comedy,7.8,Coming Soon,https://placekitten.com/908/659
+110,Mr. Warmth: The Don Rickles Project,Drama,6.2,Coming Soon,https://placekitten.com/564/423
+111,Shooting War,Sci-Fi,8.9,Now Showing,https://picsum.photos/559/836
+112,Semper Fi,Drama,4.2,Now Showing,https://dummyimage.com/78x800
+113,Puppet Master: The Legacy,Drama,3.4,Now Showing,https://picsum.photos/643/148
+114,Gretchen the Greenhorn,Drama,5.1,Now Showing,https://placekitten.com/283/736
+115,Blood: The Last Vampire,Horror,9,Coming Soon,https://placekitten.com/813/58
+116,Liverpool,Comedy,8.7,Coming Soon,https://placekitten.com/136/314
+117,Theodora Goes Wild,Action,6.5,Now Showing,https://placekitten.com/860/12
+118,Don't Touch the Axe,Action,1.1,Now Showing,https://dummyimage.com/81x508
+119,Horsemen,Drama,4.9,Now Showing,https://picsum.photos/100/944
+120,"Swades: We, the People",Horror,3.7,Now Showing,https://dummyimage.com/598x1003
+121,Bart Got a Room,Action,5,Now Showing,https://picsum.photos/873/111
+122,Jerichow,Comedy,8.5,Now Showing,https://placekitten.com/95/849
+123,A Matter of Dignity,Comedy,3.9,Coming Soon,https://placekitten.com/478/768
+124,The Spousals of God,Horror,1.7,Now Showing,https://placekitten.com/513/399
+125,The Last of England,Horror,6.1,Now Showing,https://placekitten.com/162/55
+126,Harmful Insect,Sci-Fi,1,Coming Soon,https://dummyimage.com/435x319
+127,Project A II,Sci-Fi,1.5,Now Showing,https://placekitten.com/545/557
+128,"My Son, My Son, What Have Ye Done",Drama,8.4,Coming Soon,https://placekitten.com/959/592
+129,Fire-Eater,Drama,5.8,Now Showing,https://dummyimage.com/544x546
+130,Soul Kitchen,Drama,1.3,Now Showing,https://picsum.photos/593/119
+131,Quiet Chaos,Drama,1.7,Coming Soon,https://dummyimage.com/288x35
+132,Heat,Drama,3,Coming Soon,https://dummyimage.com/424x645
+133,"The Devil, Probably",Action,2.6,Coming Soon,https://dummyimage.com/255x944
+134,Altiplano,Comedy,1.1,Coming Soon,https://picsum.photos/616/283
+135,One Way Passage,Drama,3.8,Coming Soon,https://placekitten.com/547/515
+136,"The Actress, the Dollars and the Transylvanians",Comedy,4.6,Coming Soon,https://picsum.photos/416/517
+137,The House on Sorority Row,Comedy,5.1,Now Showing,https://placekitten.com/562/600
+138,Dragon Hunters,Sci-Fi,8.9,Coming Soon,https://picsum.photos/774/875
+139,The 27 Club,Drama,7.5,Now Showing,https://placekitten.com/786/733
+140,Rob-B-Hood,Comedy,9.4,Coming Soon,https://placekitten.com/917/714
+141,Year of the Comet,Sci-Fi,3.5,Coming Soon,https://placekitten.com/488/694
+142,The Concert,Action,7.7,Now Showing,https://dummyimage.com/850x516
+143,Macheads,Action,7.8,Now Showing,https://picsum.photos/543/173
+144,Welcome To Macintosh,Sci-Fi,3.3,Now Showing,https://placekitten.com/629/370
+145,The Butterfly,Sci-Fi,7,Coming Soon,https://picsum.photos/420/406
+146,The Other Man,Action,3.9,Now Showing,https://placekitten.com/370/357
+147,Wrong Turn at Tahoe,Sci-Fi,2.7,Coming Soon,https://picsum.photos/952/26
+148,Ninja,Sci-Fi,9.7,Coming Soon,https://placekitten.com/736/1000
+149,If You Love,Horror,6.8,Now Showing,https://dummyimage.com/103x666
+150,The Queen and I,Comedy,3,Coming Soon,https://placekitten.com/723/71
+151,The Long Day Closes,Drama,2.2,Now Showing,https://picsum.photos/447/465
+152,The Baker's Wife,Comedy,7.3,Now Showing,https://dummyimage.com/561x172
+153,Fighter,Comedy,9.7,Now Showing,https://picsum.photos/188/71
+154,The Story of a Cheat,Action,7.2,Coming Soon,https://dummyimage.com/554x660
+155,Subarnarekha,Action,4.7,Now Showing,https://picsum.photos/224/547
+156,Douce,Comedy,8,Coming Soon,https://picsum.photos/783/382
+157,Kid Galahad,Sci-Fi,4,Now Showing,https://picsum.photos/0/907
+158,Asterix at the Olympic Games,Action,1.1,Now Showing,https://placekitten.com/266/364
+159,The Chaser,Sci-Fi,3.7,Coming Soon,https://picsum.photos/948/903
+160,Flock of Dodos: The Evolution-Intelligent Design Circus,Horror,9.4,Now Showing,https://picsum.photos/144/166
+161,Disgrace,Drama,2,Now Showing,https://dummyimage.com/886x282
+162,Hannah Takes the Stairs,Horror,2.9,Coming Soon,https://picsum.photos/235/49
+163,Meantime,Action,6.4,Coming Soon,https://dummyimage.com/932x972
+164,Abigail's Party,Sci-Fi,5,Coming Soon,https://picsum.photos/417/749
+165,Violence at Noon,Drama,7.1,Coming Soon,https://picsum.photos/504/452
+166,Mega Shark vs Giant Octopus,Comedy,9.5,Now Showing,https://placekitten.com/637/182
+167,Mall Girls,Drama,1.5,Coming Soon,https://dummyimage.com/16x775
+168,Landscape No. 2,Action,7.7,Now Showing,https://placekitten.com/683/337
+169,Dr. Otto and the Riddle of the Gloom Beam,Comedy,7.7,Now Showing,https://placekitten.com/89/607
+170,"Rudolph, the Red-Nosed Reindeer",Horror,8.4,Coming Soon,https://dummyimage.com/291x1002
+171,A Dennis the Menace Christmas,Comedy,9.2,Now Showing,https://dummyimage.com/9x749
+172,Nowhere Boy,Action,2,Coming Soon,https://picsum.photos/324/168
+173,Note by Note: The Making of Steinway L1037,Comedy,2.2,Coming Soon,https://placekitten.com/71/20
+174,Garbage Warrior,Sci-Fi,1.9,Coming Soon,https://placekitten.com/419/612
+175,The Thaw,Comedy,6.1,Coming Soon,https://placekitten.com/748/447
+176,The Living Room of the Nation,Horror,7.2,Now Showing,https://placekitten.com/921/237
+177,Blood and Bone,Horror,4.7,Coming Soon,https://dummyimage.com/174x742
+178,Undisputed II: Last Man Standing,Horror,8.7,Now Showing,https://placekitten.com/718/974
+179,Motocrossed,Horror,5.6,Now Showing,https://picsum.photos/392/837
+180,3 Idiots,Horror,4,Now Showing,https://picsum.photos/204/266
+181,Svampe,Sci-Fi,1.2,Coming Soon,https://placekitten.com/561/101
+182,Troubled Water,Comedy,9.5,Coming Soon,https://placekitten.com/202/410
+183,Hum Tum,Drama,3.2,Now Showing,https://placekitten.com/281/82
+184,Genevieve,Sci-Fi,6.8,Coming Soon,https://placekitten.com/521/982
+185,Sometimes a Great Notion,Drama,3.6,Now Showing,https://dummyimage.com/852x692
+186,Out of It,Horror,5.5,Coming Soon,https://picsum.photos/850/279
+187,Running Mates,Drama,7.1,Now Showing,https://dummyimage.com/446x464
+188,Legion,Sci-Fi,4.9,Now Showing,https://dummyimage.com/196x322
+189,Air Force,Action,1.7,Coming Soon,https://placekitten.com/501/258
+190,Coquette,Sci-Fi,4.9,Coming Soon,https://dummyimage.com/54x687
+191,Unconquered,Drama,4.5,Coming Soon,https://dummyimage.com/884x735
+192,Man Hunt,Sci-Fi,7.8,Coming Soon,https://picsum.photos/130/17
+193,The Maid,Comedy,2,Now Showing,https://picsum.photos/923/1009
+194,"The Oil, the Baby and the Transylvanians",Sci-Fi,7.5,Coming Soon,https://placekitten.com/1019/318
+195,Defenseless,Action,4.3,Coming Soon,https://picsum.photos/329/447
+196,Pyrates,Action,5.8,Now Showing,https://placekitten.com/874/259
+197,Silent Wedding,Drama,5.1,Now Showing,https://placekitten.com/55/236
+198,A Fine Mess,Horror,5.4,Coming Soon,https://placekitten.com/166/935
+199,Thomas Pynchon: A Journey Into the Mind of P.,Comedy,9.6,Now Showing,https://dummyimage.com/272x643
+200,Rahtree: Flower of the Night,Action,3.3,Coming Soon,https://dummyimage.com/629x235
+201,Beautiful,Sci-Fi,5.2,Coming Soon,https://placekitten.com/334/732
+202,Stan Helsing,Comedy,8.9,Coming Soon,https://dummyimage.com/128x263
+203,Forgiven,Comedy,7.4,Now Showing,https://dummyimage.com/909x406
+204,Peter Pan,Drama,2.9,Now Showing,https://placekitten.com/423/139
+205,Wicked City,Sci-Fi,2.9,Coming Soon,https://placekitten.com/50/121
+206,Cabiria,Sci-Fi,5.1,Now Showing,https://placekitten.com/14/721
+207,Virginia City,Action,4.8,Coming Soon,https://dummyimage.com/755x783
+208,Female Yakuza Tale,Action,5.4,Coming Soon,https://picsum.photos/944/749
+209,Together Again,Sci-Fi,3.5,Now Showing,https://picsum.photos/43/865
+210,If You Could Only Cook,Action,5.6,Now Showing,https://dummyimage.com/723x7
+211,Arn: The Kingdom at Road's End,Drama,2.4,Now Showing,https://placekitten.com/929/891
+212,Japan's Longest Day,Sci-Fi,9.6,Coming Soon,https://dummyimage.com/296x516
+213,Dante's Hell Animated,Comedy,7.2,Coming Soon,https://dummyimage.com/379x667
+214,Shriek of the Mutilated,Comedy,3,Now Showing,https://dummyimage.com/405x286
+215,Four Eyed Monsters,Comedy,5.8,Now Showing,https://dummyimage.com/645x576
+216,Extraordinary Measures,Drama,1.8,Coming Soon,https://picsum.photos/1013/869
+217,Havukka-Ahon Ajattelija,Drama,3.9,Now Showing,https://placekitten.com/938/560
+218,Too Many Husbands,Action,4.7,Coming Soon,https://dummyimage.com/818x438
+219,The Red Baron,Sci-Fi,2.3,Now Showing,https://picsum.photos/702/476
+220,The Holy Innocents,Action,1.2,Now Showing,https://placekitten.com/210/481
+221,Crime and Punishment,Comedy,4.1,Coming Soon,https://dummyimage.com/485x982
+222,More Than a Game,Horror,7.1,Now Showing,https://picsum.photos/296/285
+223,Falling Up,Comedy,5.7,Now Showing,https://dummyimage.com/79x987
+224,Zach Galifianakis: Live at the Purple Onion,Horror,5.1,Now Showing,https://placekitten.com/215/935
+225,When in Rome,Comedy,8.6,Coming Soon,https://dummyimage.com/94x847
+226,Edge of Darkness,Horror,2.3,Now Showing,https://picsum.photos/186/23
+227,Ethan Mao,Action,5,Coming Soon,https://placekitten.com/710/824
+228,Charlie Chan in Shanghai,Comedy,5.6,Coming Soon,https://picsum.photos/910/600
+229,The Hands of Orlac,Horror,8.1,Now Showing,https://placekitten.com/56/10
+230,Mad Detective,Comedy,4.7,Now Showing,https://placekitten.com/398/147
+231,The Quince Tree Sun,Comedy,6.8,Coming Soon,https://picsum.photos/208/254
+232,Triangle,Horror,2.2,Coming Soon,https://dummyimage.com/304x242
+233,The Perfect Circle,Comedy,4,Now Showing,https://picsum.photos/68/106
+234,Rampage,Comedy,9.4,Now Showing,https://dummyimage.com/704x489
+235,The Ambulance,Horror,7.8,Now Showing,https://placekitten.com/560/271
+236,Cimarron,Comedy,7.7,Coming Soon,https://placekitten.com/426/386
+237,Dangerous,Sci-Fi,9.5,Now Showing,https://dummyimage.com/258x189
+238,I Never Sang for My Father,Horror,7.1,Now Showing,https://dummyimage.com/270x353
+239,Space Pirate Captain Harlock: Arcadia of My Youth,Sci-Fi,3.9,Coming Soon,https://picsum.photos/614/455
+240,I Love You Phillip Morris,Drama,8.7,Now Showing,https://picsum.photos/219/960
+241,Anne of Green Gables: The Sequel,Comedy,8.1,Now Showing,https://picsum.photos/585/225
+242,The Donner Party,Drama,2.9,Coming Soon,https://dummyimage.com/378x1006
+243,Electric Shadows,Horror,5.3,Now Showing,https://picsum.photos/13/1017
+244,Mistress,Comedy,7.5,Now Showing,https://dummyimage.com/759x615
+245,Extreme Justice,Drama,1.3,Coming Soon,https://picsum.photos/935/287
+246,The Sun,Comedy,4.7,Now Showing,https://picsum.photos/190/388
+247,Vivacious Lady,Drama,9,Now Showing,https://picsum.photos/866/505
+248,Escape from Suburbia: Beyond the American Dream,Action,1.2,Coming Soon,https://dummyimage.com/198x593
+249,Dead Ahead: The Exxon Valdez Disaster,Horror,9.1,Now Showing,https://dummyimage.com/201x152
+250,Temple Grandin,Comedy,7.7,Coming Soon,https://dummyimage.com/485x421
+251,The First Day of the Rest of Your Life,Sci-Fi,6.7,Now Showing,https://dummyimage.com/914x468
+252,Me and Him,Drama,1.9,Coming Soon,https://picsum.photos/109/888
+253,For the Love of Movies: The Story of American Film Criticism,Drama,2.5,Coming Soon,https://picsum.photos/723/615
+254,Thank God It's Friday,Sci-Fi,5.6,Now Showing,https://dummyimage.com/804x499
+255,"Captain Newman, M.D.",Drama,5.6,Coming Soon,https://placekitten.com/608/677
+256,Serious Moonlight,Sci-Fi,5,Coming Soon,https://picsum.photos/507/80
+257,The House of the Devil,Sci-Fi,8.4,Coming Soon,https://dummyimage.com/516x641
+258,Black Legion,Comedy,6.1,Now Showing,https://dummyimage.com/824x804
+259,The Hero: Love Story of a Spy,Drama,9.9,Coming Soon,https://dummyimage.com/219x533
+260,Lucky: No Time for Love,Horror,9.5,Now Showing,https://dummyimage.com/521x540
+261,Fish Tank,Sci-Fi,8.7,Now Showing,https://placekitten.com/604/188
+262,Love Stories,Drama,8.1,Now Showing,https://picsum.photos/445/272
+263,Absurdistan,Drama,1.4,Now Showing,https://dummyimage.com/320x482
+264,Takva: A Man's Fear of God,Horror,4,Coming Soon,https://picsum.photos/719/50
+265,The Wounds,Comedy,3.2,Coming Soon,https://picsum.photos/197/785
+266,Body Bags,Comedy,1.9,Coming Soon,https://placekitten.com/292/417
+267,Legend of the Red Dragon,Sci-Fi,6.2,Coming Soon,https://dummyimage.com/266x175
+268,The Hound of the Baskervilles,Comedy,2.4,Now Showing,https://placekitten.com/616/154
+269,The Royal Scandal,Sci-Fi,5.2,Now Showing,https://placekitten.com/960/948
+270,Valentine's Day,Drama,3.9,Now Showing,https://picsum.photos/888/978
+271,The Wolfman,Action,9.8,Coming Soon,https://picsum.photos/406/578
+272,Babysitter Wanted,Action,8.8,Coming Soon,https://placekitten.com/92/486
+273,Shutter Island,Action,9.7,Now Showing,https://dummyimage.com/303x438
+274,The Sign of Four,Comedy,7,Now Showing,https://placekitten.com/378/821
+275,The Case of the Whitechapel Vampire,Horror,3.8,Now Showing,https://dummyimage.com/305x317
+276,The Headless Woman,Comedy,8.6,Now Showing,https://picsum.photos/864/319
+277,Yellow,Sci-Fi,5.5,Coming Soon,https://dummyimage.com/616x655
+278,The Other End of the Line,Horror,4.7,Coming Soon,https://dummyimage.com/58x222
+279,Bitch Slap,Comedy,4.7,Coming Soon,https://dummyimage.com/447x932
+280,Aria,Action,5.4,Now Showing,https://placekitten.com/300/568
+281,Ondine,Comedy,9.1,Coming Soon,https://dummyimage.com/306x1006
+282,1066: The Battle for Middle Earth,Sci-Fi,6.5,Now Showing,https://dummyimage.com/111x526
+283,The Steam Experiment,Drama,8.4,Coming Soon,https://placekitten.com/896/614
+284,Letters to Father Jacob,Drama,6.3,Now Showing,https://placekitten.com/440/942
+285,The Bakery Girl of Monceau,Action,6.5,Now Showing,https://picsum.photos/525/337
+286,Persuasion,Sci-Fi,4,Now Showing,https://picsum.photos/373/607
+287,The Girl Who Played with Fire,Action,4.4,Coming Soon,https://dummyimage.com/819x687
+288,Steal This Film,Drama,6.3,Now Showing,https://picsum.photos/454/122
+289,Percy Jackson & the Olympians: The Lightning Thief,Action,5.6,Coming Soon,https://placekitten.com/191/170
+290,Cop Out,Drama,6.8,Now Showing,https://placekitten.com/753/886
+291,Mademoiselle,Drama,8.9,Coming Soon,https://placekitten.com/591/1010
+292,Trailer Park Boys: Countdown to Liquor Day,Action,6.7,Coming Soon,https://placekitten.com/703/723
+293,The Ghost Writer,Comedy,7,Now Showing,https://dummyimage.com/148x715
+294,Darling Lili,Drama,4.2,Coming Soon,https://placekitten.com/943/183
+295,The Secret of Kells,Sci-Fi,3.4,Coming Soon,https://dummyimage.com/964x774
+296,The Vicious Kind,Comedy,8,Coming Soon,https://placekitten.com/526/888
+297,The Secret of Santa Vittoria,Comedy,10,Now Showing,https://picsum.photos/530/859
+298,The Spy Next Door,Action,2.8,Coming Soon,https://dummyimage.com/413x662
+299,I Hope They Serve Beer in Hell,Sci-Fi,6,Coming Soon,https://placekitten.com/63/563
+300,Caged,Drama,2.2,Now Showing,https://picsum.photos/872/908
+301,The House on 92nd Street,Sci-Fi,2,Now Showing,https://dummyimage.com/666x1003
+302,Blood Done Sign My Name,Comedy,2.3,Coming Soon,https://placekitten.com/100/205
+303,The Silent Partner,Drama,7.1,Now Showing,https://picsum.photos/349/191
+304,Mysterious Island,Sci-Fi,2.7,Now Showing,https://placekitten.com/841/412
+305,Dare,Comedy,9.2,Now Showing,https://picsum.photos/911/0
+306,Agora,Sci-Fi,6.5,Coming Soon,https://dummyimage.com/963x381
+307,Tom Thumb,Action,4.7,Now Showing,https://placekitten.com/74/117
+308,Singh Is Kinng,Action,5.2,Coming Soon,https://picsum.photos/652/809
+309,Motherhood,Action,7.3,Coming Soon,https://dummyimage.com/65x453
+310,Shades of Ray,Action,4.3,Coming Soon,https://picsum.photos/924/78
+311,Shinjuku Incident,Horror,1.6,Coming Soon,https://placekitten.com/38/909
+312,High Life,Drama,1.9,Coming Soon,https://placekitten.com/414/680
+313,District 13: Ultimatum,Sci-Fi,6.3,Now Showing,https://dummyimage.com/285x763
+314,Rockaway,Drama,5.5,Coming Soon,https://dummyimage.com/543x351
+315,Fast Lane,Sci-Fi,9.7,Coming Soon,https://placekitten.com/951/618
+316,Pudana: Last of the Line,Comedy,8.7,Now Showing,https://dummyimage.com/107x626
+317,The Yes Men Fix the World,Action,1.9,Coming Soon,https://placekitten.com/871/6
+318,Normal Adolescent Behavior,Horror,3.5,Coming Soon,https://placekitten.com/280/635
+319,Mike Bassett: England Manager,Comedy,4.6,Coming Soon,https://placekitten.com/26/195
+320,The Crazies,Horror,1.4,Coming Soon,https://picsum.photos/7/154
+321,Dear John,Horror,4.7,Coming Soon,https://dummyimage.com/770x265
+322,Last Train Home,Sci-Fi,9.8,Now Showing,https://placekitten.com/590/1000
+323,Tooth Fairy,Action,5.3,Now Showing,https://picsum.photos/615/733
+324,Of Time and the City,Comedy,6.1,Coming Soon,https://picsum.photos/949/315
+325,"La Commune (Paris, 1871)",Horror,7.1,Coming Soon,https://placekitten.com/681/196
+326,Gentlemen of Fortune,Horror,4.8,Now Showing,https://picsum.photos/535/62
+327,Eden Log,Comedy,3.6,Now Showing,https://dummyimage.com/347x232
+328,Trap,Drama,3.4,Now Showing,https://picsum.photos/3/464
+329,Isolation,Action,4.9,Now Showing,https://placekitten.com/43/161
+330,Fermat's Room,Comedy,3.1,Now Showing,https://dummyimage.com/656x704
+331,Under the Bombs,Sci-Fi,8.3,Now Showing,https://dummyimage.com/341x303
+332,LEGO: The Adventures of Clutch Powers,Comedy,3.3,Coming Soon,https://picsum.photos/27/952
+333,Cabin Fever 2: Spring Fever,Sci-Fi,6.2,Now Showing,https://picsum.photos/331/945
+334,The Room,Sci-Fi,8.1,Now Showing,https://picsum.photos/5/242
+335,Killer Bean 2: The Party,Sci-Fi,4.7,Now Showing,https://dummyimage.com/325x238
+336,The Scarlet Dove,Sci-Fi,3.6,Coming Soon,https://placekitten.com/152/630
+337,Asphalt Lambs,Action,1.6,Coming Soon,https://picsum.photos/710/381
+338,Lars i porten,Action,7.3,Coming Soon,https://dummyimage.com/345x182
+339,My Name Is Khan,Action,7.4,Coming Soon,https://dummyimage.com/226x580
+340,Alice in Wonderland,Comedy,7.1,Now Showing,https://placekitten.com/322/776
+341,A Town Called Panic,Sci-Fi,6.1,Now Showing,https://dummyimage.com/877x1021
+342,Green Zone,Drama,1.2,Now Showing,https://placekitten.com/969/441
+343,The Call of the Wild,Comedy,5.1,Now Showing,https://dummyimage.com/234x599
+344,44 Inch Chest,Drama,7.4,Now Showing,https://placekitten.com/732/711
+345,The Fall of the Roman Empire,Comedy,2.2,Coming Soon,https://placekitten.com/683/415
+346,Ajami,Sci-Fi,4.9,Coming Soon,https://picsum.photos/347/644
+347,From Paris with Love,Horror,5.4,Now Showing,https://dummyimage.com/555x347
+348,Strategic Air Command,Horror,4.9,Coming Soon,https://dummyimage.com/52x119
+349,The Boy Friend,Sci-Fi,4.8,Now Showing,https://dummyimage.com/996x729
+350,Road Trip: Beer Pong,Action,6.7,Coming Soon,https://picsum.photos/875/239
+351,Zone of the Dead,Horror,1.4,Now Showing,https://placekitten.com/893/367
+352,Dorian Gray,Comedy,9.7,Coming Soon,https://dummyimage.com/141x709
+353,That Sinking Feeling,Sci-Fi,1.9,Now Showing,https://dummyimage.com/838x982
+354,Taras Bulba,Horror,6.1,Coming Soon,https://dummyimage.com/517x500
+355,Greenberg,Action,6.4,Coming Soon,https://dummyimage.com/465x890
+356,Two-Minute Warning,Sci-Fi,5.1,Coming Soon,https://placekitten.com/268/544
+357,Brooklyn's Finest,Comedy,3,Now Showing,https://dummyimage.com/128x815
+358,She's Out of My League,Action,7.2,Coming Soon,https://placekitten.com/969/345
+359,Harry Brown,Comedy,6.3,Now Showing,https://dummyimage.com/561x670
+360,The Dead Outside,Horror,9.9,Now Showing,https://placekitten.com/351/183
+361,The Mysteries of Pittsburgh,Drama,2.1,Now Showing,https://placekitten.com/14/427
+362,Never Forever,Drama,2.1,Coming Soon,https://dummyimage.com/519x522
+363,Remember Me,Action,9.6,Now Showing,https://picsum.photos/79/954
+364,Failan,Horror,9.9,Now Showing,https://picsum.photos/239/611
+365,Teenage Caveman,Horror,1.1,Coming Soon,https://dummyimage.com/14x696
+366,The Night Stalker,Horror,1.3,Now Showing,https://dummyimage.com/48x104
+367,Skeleton Crew,Comedy,6,Coming Soon,https://picsum.photos/421/533
+368,The Cool World,Drama,4.1,Coming Soon,https://placekitten.com/890/99
+369,Posse,Sci-Fi,3.3,Coming Soon,https://picsum.photos/614/722
+370,Joy Ride 2: Dead Ahead,Drama,5.7,Coming Soon,https://picsum.photos/685/633
+371,Vinyan,Comedy,4.8,Now Showing,https://placekitten.com/87/205
+372,The Burrowers,Drama,5.8,Coming Soon,https://placekitten.com/744/170
+373,The Last Deadly Mission,Sci-Fi,7.6,Now Showing,https://dummyimage.com/156x259
+374,Frozen,Action,3.9,Coming Soon,https://picsum.photos/713/808
+375,Torrid Zone,Action,5,Now Showing,https://dummyimage.com/303x192
+376,ZMD: Zombies of Mass Destruction,Action,10,Coming Soon,https://placekitten.com/68/416
+377,The Carter,Horror,3.5,Now Showing,https://placekitten.com/349/606
+378,Lupin the Third: Sweet Lost Night,Horror,7.1,Now Showing,https://picsum.photos/625/529
+379,Blade of the Ripper,Drama,9.4,Now Showing,https://picsum.photos/55/406
+380,Generation X,Drama,1.9,Coming Soon,https://dummyimage.com/925x985
+381,Girl of Finland,Comedy,9.9,Coming Soon,https://placekitten.com/762/48
+382,The Devil's Eye,Action,9.8,Now Showing,https://picsum.photos/441/630
+383,Survival of the Dead,Drama,7.3,Now Showing,https://placekitten.com/695/757
+384,The Way You Wanted Me,Comedy,8.1,Now Showing,https://picsum.photos/962/906
+385,"Skin, Skin",Sci-Fi,3.4,Coming Soon,https://picsum.photos/824/120
+386,Nine Dead,Horror,3.4,Coming Soon,https://picsum.photos/203/390
+387,Will Ferrell: You're Welcome America - A Final Night with George W. Bush,Comedy,2.2,Now Showing,https://picsum.photos/464/427
+388,Invisible Stripes,Comedy,1.5,Coming Soon,https://dummyimage.com/471x82
+389,Little Ashes,Sci-Fi,3.5,Coming Soon,https://picsum.photos/79/757
+390,Our Family Wedding,Comedy,8.2,Now Showing,https://dummyimage.com/594x880
+391,The Bounty Hunter,Comedy,6.9,Coming Soon,https://placekitten.com/425/396
+392,Dead Man Running,Action,6.1,Coming Soon,https://placekitten.com/961/193
+393,Leaves of Grass,Drama,6.4,Coming Soon,https://dummyimage.com/385x918
+394,Women in Trouble,Horror,1.3,Now Showing,https://dummyimage.com/707x780
+395,Afghan Star,Drama,9.2,Now Showing,https://placekitten.com/524/38
+396,I Was a Communist for the FBI,Comedy,9.7,Coming Soon,https://picsum.photos/166/588
+397,Combat Shock,Horror,1.4,Coming Soon,https://dummyimage.com/331x1015
+398,The Card Player,Comedy,7.8,Coming Soon,https://picsum.photos/354/1020
+399,The Hollywood Revue of 1929,Horror,7.4,Now Showing,https://dummyimage.com/53x45
+400,Haunted Echoes,Action,5.7,Now Showing,https://picsum.photos/447/599
+401,Possession,Horror,6.4,Now Showing,https://dummyimage.com/510x459
+402,Deadly Prey,Drama,5.5,Now Showing,https://dummyimage.com/529x402
+403,The Seventh Veil,Comedy,7,Coming Soon,https://picsum.photos/905/124
+404,Mondo Cane,Horror,8.5,Coming Soon,https://picsum.photos/82/407
+405,The Egyptian,Action,5.2,Now Showing,https://picsum.photos/188/175
+406,The Egg and I,Horror,5.8,Now Showing,https://dummyimage.com/361x409
+407,Brass Monkey,Action,1.5,Now Showing,https://picsum.photos/535/344
+408,The Frightened City,Horror,2.3,Coming Soon,https://picsum.photos/743/908
+409,"Who Are You, Polly Maggoo?",Drama,4.7,Coming Soon,https://picsum.photos/888/601
+410,North Face,Horror,7.4,Coming Soon,https://picsum.photos/266/458
+411,Repo Men,Horror,2.2,Now Showing,https://dummyimage.com/217x196
+412,The Apprenticeship of Duddy Kravitz,Horror,6.5,Coming Soon,https://picsum.photos/555/650
+413,The Brothers Karamazov,Horror,1.3,Coming Soon,https://picsum.photos/355/965
+414,The Buccaneer,Sci-Fi,1.1,Now Showing,https://dummyimage.com/430x184
+415,Restless Blood,Action,2.4,Now Showing,https://dummyimage.com/837x129
+416,Case 39,Action,6.8,Now Showing,https://picsum.photos/464/274
+417,After Last Season,Sci-Fi,4,Now Showing,https://dummyimage.com/764x50
+418,Guest of Cindy Sherman,Comedy,8.1,Coming Soon,https://placekitten.com/251/771
+419,Delhi-6,Horror,4.5,Now Showing,https://picsum.photos/886/797
+420,Oceans,Drama,9,Coming Soon,https://placekitten.com/758/898
+421,New York,Sci-Fi,2.3,Now Showing,https://picsum.photos/697/499
+422,The Slammin' Salmon,Horror,3.7,Coming Soon,https://dummyimage.com/278x590
+423,Your Vice is a Locked Room and Only I Have the Key,Drama,5.4,Coming Soon,https://picsum.photos/136/924
+424,Cookers,Comedy,2.7,Now Showing,https://picsum.photos/343/143
+425,Hot Tub Time Machine,Comedy,8.1,Now Showing,https://dummyimage.com/794x212
+426,Chloe,Drama,9.1,Now Showing,https://dummyimage.com/763x542
+427,Blackwoods,Comedy,4,Now Showing,https://placekitten.com/890/373
+428,Trash,Horror,8.1,Now Showing,https://placekitten.com/720/922
+429,Zift,Sci-Fi,5.9,Now Showing,https://dummyimage.com/898x851
+430,Flesh and the Devil,Horror,6,Coming Soon,https://placekitten.com/53/136
+431,Mother,Drama,2,Now Showing,https://picsum.photos/433/859
+432,How to Train Your Dragon,Sci-Fi,8.4,Coming Soon,https://placekitten.com/400/958
+433,Tom and Jerry: The Movie,Action,4.2,Now Showing,https://dummyimage.com/737x116
+434,About Elly,Sci-Fi,6.6,Now Showing,https://placekitten.com/760/548
+435,King and the Clown,Action,2.7,Coming Soon,https://placekitten.com/918/2
+436,Extreme Movie,Horror,2.9,Coming Soon,https://picsum.photos/980/360
+437,Dark Mirror,Sci-Fi,2.5,Now Showing,https://placekitten.com/988/844
+438,"You're a Good Man, Charlie Brown",Sci-Fi,2.3,Coming Soon,https://placekitten.com/1014/551
+439,Universal Soldier: Regeneration,Comedy,7,Now Showing,https://placekitten.com/105/529
+440,Bunty Aur Babli,Drama,1.4,Coming Soon,https://dummyimage.com/695x252
+441,The Pearl of Death,Drama,1.9,Now Showing,https://picsum.photos/765/151
+442,Hell,Horror,7.6,Coming Soon,https://placekitten.com/102/605
+443,The Bone Man,Horror,3.2,Coming Soon,https://placekitten.com/238/866
+444,Scar,Sci-Fi,4.6,Coming Soon,https://placekitten.com/488/399
+445,I Hate Valentine's Day,Sci-Fi,4.5,Now Showing,https://placekitten.com/573/992
+446,Dogtooth,Action,3.2,Coming Soon,https://placekitten.com/366/926
+447,Lupin the Third: Episode 0: First Contact,Drama,4.2,Now Showing,https://placekitten.com/538/373
+448,Yuki & Nina,Horror,9.7,Now Showing,https://placekitten.com/102/403
+449,Air Doll,Action,8.2,Coming Soon,https://picsum.photos/747/386
+450,Main Street,Sci-Fi,3.2,Coming Soon,https://picsum.photos/971/101
+451,"Come, Sweet Death",Comedy,5.9,Coming Soon,https://picsum.photos/860/125
+452,India,Action,2.5,Coming Soon,https://dummyimage.com/7x599
+453,Micmacs,Sci-Fi,2.3,Now Showing,https://placekitten.com/776/380
+454,Clash of the Titans,Drama,2,Coming Soon,https://placekitten.com/289/540
+455,Rockabilly Vampire,Sci-Fi,2.9,Now Showing,https://placekitten.com/151/635
+456,American Psycho,Horror,5.1,Coming Soon,https://placekitten.com/823/1011
+457,White Mane,Comedy,7.2,Now Showing,https://picsum.photos/177/461
+458,Growth,Horror,1.3,Coming Soon,https://placekitten.com/524/709
+459,The Cremator,Horror,9.5,Now Showing,https://placekitten.com/423/414
+460,Defendor,Drama,2.4,Now Showing,https://picsum.photos/356/334
+461,Bass Ackwards,Action,6,Coming Soon,https://picsum.photos/446/357
+462,One 2 Ka 4,Comedy,2.9,Now Showing,https://picsum.photos/742/335
+463,Shakti: The Power,Action,4.8,Coming Soon,https://dummyimage.com/282x683
+464,Glorious 39,Drama,9.1,Coming Soon,https://placekitten.com/188/576
+465,Kick-Ass,Drama,3.8,Now Showing,https://picsum.photos/317/367
+466,Varg Veum - Bitter Flowers,Horror,1.7,Coming Soon,https://picsum.photos/2/537
+467,Varg Veum - Fallen Angels,Action,8.8,Coming Soon,https://picsum.photos/869/413
+468,Chalte Chalte,Drama,8.3,Coming Soon,https://dummyimage.com/767x62
+469,Five Minutes of Heaven,Action,4.5,Now Showing,https://dummyimage.com/532x436
+470,The Hanging Tree,Drama,8.1,Now Showing,https://picsum.photos/888/492
+471,Cain and Mabel,Action,8.7,Coming Soon,https://dummyimage.com/661x109
+472,Swastika,Horror,5.6,Coming Soon,https://placekitten.com/557/246
+473,Karan Arjun,Action,7.2,Coming Soon,https://picsum.photos/98/710
+474,Date Night,Action,8.8,Now Showing,https://placekitten.com/518/593
+475,The Pit and the Pendulum,Sci-Fi,3.8,Coming Soon,https://picsum.photos/244/478
+476,Kronk's New Groove,Sci-Fi,8.8,Now Showing,https://picsum.photos/648/243
+477,Mark of the Devil,Comedy,5.4,Now Showing,https://dummyimage.com/62x896
+478,The Brink's Job,Sci-Fi,1.8,Now Showing,https://placekitten.com/50/907
+479,After.Life,Drama,6.6,Coming Soon,https://dummyimage.com/568x243
+480,Camille,Action,9.7,Now Showing,https://placekitten.com/743/492
+481,The Virgin Queen,Comedy,5.8,Now Showing,https://placekitten.com/748/92
+482,The Sheepman,Comedy,8,Coming Soon,https://dummyimage.com/172x86
+483,Shrek,Horror,6,Now Showing,https://dummyimage.com/0x268
+484,Love's Abiding Joy,Sci-Fi,8.9,Now Showing,https://dummyimage.com/150x422
+485,Spiderman: The Ultimate Villain Showdown,Horror,8.5,Coming Soon,https://placekitten.com/155/579
+486,Terry Fator: Live from Las Vegas,Sci-Fi,8.7,Now Showing,https://dummyimage.com/848x328
+487,Five Star Final,Horror,3.5,Coming Soon,https://dummyimage.com/67x412
+488,Downloading Nancy,Action,6.6,Now Showing,https://dummyimage.com/220x642
+489,Oneechanbara The Movie,Action,6.8,Now Showing,https://picsum.photos/886/375
+490,Movie Crazy,Horror,7.1,Now Showing,https://picsum.photos/892/665
+491,The Oklahoma Kid,Horror,3.9,Coming Soon,https://dummyimage.com/303x798
+492,Don McKay,Comedy,7.8,Coming Soon,https://dummyimage.com/861x933
+493,Taqwacore: The Birth of Punk Islam,Drama,4.3,Coming Soon,https://picsum.photos/614/52
+494,Grim Reaper,Comedy,3.1,Coming Soon,https://placekitten.com/308/172
+495,Steam of Life,Horror,7.6,Now Showing,https://dummyimage.com/922x961
+496,Mortadelo & Filemon: The Big Adventure,Horror,6.6,Now Showing,https://dummyimage.com/739x6
+497,Angel,Horror,8.9,Coming Soon,https://placekitten.com/704/200
+498,American Drug War: The Last White Hope,Sci-Fi,5.4,Now Showing,https://dummyimage.com/577x914
+499,The Final,Sci-Fi,4.3,Coming Soon,https://picsum.photos/927/454
+500,Peacock,Comedy,8.5,Now Showing,https://dummyimage.com/124x1007

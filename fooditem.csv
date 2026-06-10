@@ -1,0 +1,21 @@
+item_id,name,description,is_combo
+1,Twilight Soda,"A refreshing soda with a crisp, citrusy twist, perfect for unwinding.",TRUE
+2,Classic Chicken Burger,"A juicy, flame-grilled Chicken patty topped with fresh veggies and signature sauce.",TRUE
+3,Caramel Crunch Popcorn,Sweet caramel-coated popcorn with a delightful crunch in every bite.,TRUE
+4,Golden Butter Popcorn,"Freshly popped, buttery goodness for the ultimate movie-time snack.",FALSE
+5,Spicy Inferno Burger,"A fiery, flavor-packed burger with spicy jalapeños and smoky chipotle mayo.",FALSE
+6,Cheesy Delight Pizza,A classic cheese-loaded pizza with a perfectly crispy crust.,FALSE
+7,BBQ Ranch Burger,A smoky BBQ burger topped with crispy onions and creamy ranch dressing.,FALSE
+8,Meat Lover’s Pizza,"A loaded pizza with pepperoni, sausage, ham, and bacon for true carnivores.",TRUE
+9,Volcano Spicy Pizza,"A bold, fiery pizza with hot sauce, jalapeños, and extra spicy pepperoni.",FALSE
+10,Caramel Bliss Popcorn,"Light, crunchy popcorn coated in rich, buttery caramel.",FALSE
+11,Cheddar Cheese Popcorn,"Irresistible popcorn coated with sharp, tangy cheddar cheese.",FALSE
+12,Smoky BBQ Pizza,"A mouthwatering pizza topped with BBQ chicken, red onions, and smoky sauce.",TRUE
+13,Savory Parmesan Popcorn,Fresh popcorn tossed with grated Parmesan and a hint of garlic.,TRUE
+14,The Ultimate Nachos,"A loaded platter of crispy nachos with cheese, salsa, jalapeños, and sour cream.",TRUE
+15,Fiesta Nachos,"Crunchy nachos topped with spicy Chicken, melted cheese, and fresh guacamole.",TRUE
+16,Earthy Herb Popcorn,"A gourmet popcorn blend with rosemary, thyme, and sea salt.",FALSE
+17,Sweet & Salty Popcorn,A perfect balance of sweet caramel and a touch of sea salt.,TRUE
+18,Vintage Cola,"A classic cola with a smooth, nostalgic flavor and a hint of vanilla.",FALSE
+19,Supreme Veggie Pizza,"A colorful mix of fresh veggies, olives, and cheese on a crispy crust.",FALSE
+20,Value Pizza,A Pocket Friendly Pizza,TRUE
