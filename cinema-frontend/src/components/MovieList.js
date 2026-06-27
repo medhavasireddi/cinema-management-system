@@ -8,7 +8,7 @@ function MovieList() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/movies')
+    axios.get('http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/movies')
       .then(res => setMovies(res.data))
       .catch(err => setError('Failed to load movies'))
       .finally(() => setLoading(false));

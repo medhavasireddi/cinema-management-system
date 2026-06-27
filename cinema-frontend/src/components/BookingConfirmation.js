@@ -22,7 +22,7 @@ function BookingConfirmation() {
   const confirmBooking = async () => {
     setLoading(true);
     try {
-      const res = await axios.post('http://127.0.0.1:8000/bookings/create', {
+      const res = await axios.post('http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/bookings/create', {
         user_id: user.user_id,
         show_id: showId,
         selected_seat_ids: selectedSeats

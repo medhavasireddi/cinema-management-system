@@ -30,23 +30,23 @@ function CinemaTabs() {
       setError('');
       try {
         if (activeTab === 'movies') {
-          const res = await axios.get('http://127.0.0.1:8000/movies');
+          const res = await axios.get('http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/movies');
           setMovies(res.data);
         } else if (activeTab === 'shows') {
-          const res = await axios.get('http://127.0.0.1:8000/shows');
+          const res = await axios.get('http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/shows');
           setShows(res.data);
         } else if (activeTab === 'users') {
-          const res = await axios.get('http://127.0.0.1:8000/users');
+          const res = await axios.get('http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/users');
           setUsers(res.data);
         } else if (activeTab === 'seats') {
-          const res = await axios.get('http://127.0.0.1:8000/screens');
+          const res = await axios.get('http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/screens');
           setScreens(res.data);
           if (shows.length === 0) {
-            const showsRes = await axios.get('http://127.0.0.1:8000/shows');
+            const showsRes = await axios.get('http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/shows');
             setShows(showsRes.data);
           }
         } else if (activeTab === 'bookings') {
-          const res = await axios.get('http://127.0.0.1:8000/bookings');
+          const res = await axios.get('http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/bookings');
           setBookings(res.data);
         }
       } catch (err) {
@@ -63,7 +63,7 @@ function CinemaTabs() {
       const fetchSeats = async () => {
         setLoading(true);
         try {
-          const res = await axios.get(`http://127.0.0.1:8000/showseats/${selectedShowId}`);
+          const res = await axios.get(`http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/showseats/${selectedShowId}`);
           setSeats(res.data);
         } catch (err) {
           setError('Could not load seats for this show.');

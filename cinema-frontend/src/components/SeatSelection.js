@@ -12,7 +12,7 @@ function SeatSelection() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/showseats/${showId}`)
+    axios.get(`http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/showseats/${showId}`)
       .then(res => setSeats(res.data))
       .finally(() => setLoading(false));
   }, [showId]);

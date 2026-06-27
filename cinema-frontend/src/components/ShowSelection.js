@@ -9,7 +9,7 @@ function ShowSelection() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/shows')
+    axios.get('http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/shows')
       .then(res => {
         const movieShows = res.data.filter(s => s.movie_id == movieId);
         setShows(movieShows);
