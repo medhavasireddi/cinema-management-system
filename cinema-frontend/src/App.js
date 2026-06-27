@@ -4,21 +4,19 @@ import axios from 'axios';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import Login from './components/Login';
 import Register from './components/Register';
-import MovieList from './components/MovieList';
 import ShowSelection from './components/ShowSelection';
 import SeatSelection from './components/SeatSelection';
 import BookingConfirmation from './components/BookingConfirmation';
 import FoodOrdering from './components/FoodOrdering';
 
+const API_BASE_URL = 'https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net';
+
 function CinemaTabs() {
   const [activeTab, setActiveTab] = useState('movies');
   const [movies, setMovies] = useState([]);
   const [shows, setShows] = useState([]);
-  const [users, setUsers] = useState([]);
-  const [screens, setScreens] = useState([]);
   const [selectedShowId, setSelectedShowId] = useState('');
   const [seats, setSeats] = useState([]);
-  const [bookings, setBookings] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const { user, logout } = useAuth();
@@ -30,24 +28,11 @@ function CinemaTabs() {
       setError('');
       try {
         if (activeTab === 'movies') {
-          const res = await axios.get('http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/movies');
+          const res = await axios.get(`${API_BASE_URL}/movies`);
           setMovies(res.data);
         } else if (activeTab === 'shows') {
-          const res = await axios.get('http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/shows');
+          const res = await axios.get(`${API_BASE_URL}/shows`);
           setShows(res.data);
-        } else if (activeTab === 'users') {
-          const res = await axios.get('http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/users');
-          setUsers(res.data);
-        } else if (activeTab === 'seats') {
-          const res = await axios.get('http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/screens');
-          setScreens(res.data);
-          if (shows.length === 0) {
-            const showsRes = await axios.get('http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/shows');
-            setShows(showsRes.data);
-          }
-        } else if (activeTab === 'bookings') {
-          const res = await axios.get('http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/bookings');
-          setBookings(res.data);
         }
       } catch (err) {
         setError('Failed to fetch data. Ensure backend is running.');
@@ -56,14 +41,14 @@ function CinemaTabs() {
       }
     };
     fetchData();
-  }, [activeTab, shows.length]);
+  }, [activeTab]);
 
   useEffect(() => {
     if (activeTab === 'seats' && selectedShowId) {
       const fetchSeats = async () => {
         setLoading(true);
         try {
-          const res = await axios.get(`http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/showseats/${selectedShowId}`);
+          const res = await axios.get(`${API_BASE_URL}/showseats/${selectedShowId}`);
           setSeats(res.data);
         } catch (err) {
           setError('Could not load seats for this show.');
@@ -79,34 +64,31 @@ function CinemaTabs() {
     if (activeTab === 'movies') {
       return (
         <>
-          <h2>Movies ({movies.length})</h2>
-          <ul style={{ columns: '2', columnGap: '30px' }}>
+          <h2>🎥 Now Showing</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '20px' }}>
             {movies.map(m => (
-              <li key={m.movie_id}><strong>{m.title}</strong> – {m.genre} (⭐{m.rating})</li>
+              <div key={m.movie_id} style={{ border: '1px solid #ddd', padding: '15px', borderRadius: '8px' }}>
+                <h3>{m.title}</h3>
+                <p>{m.genre} – ⭐{m.rating}</p>
+                <button onClick={() => navigate(`/book/${m.movie_id}`)}
+                        style={{ padding: '6px 12px', background: '#007bff', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+                  Book Now
+                </button>
+              </div>
             ))}
-          </ul>
+          </div>
         </>
       );
     }
     if (activeTab === 'shows') {
       return (
         <>
-          <h2>Shows ({shows.length})</h2>
-          <ul style={{ columns: '2', columnGap: '30px' }}>
+          <h2>📅 Show Timings</h2>
+          <ul style={{ listStyle: 'none' }}>
             {shows.map(s => (
-              <li key={s.show_id}>Show #{s.show_id} | Screen {s.screen_id} | Movie {s.movie_id} | {s.show_datetime}</li>
-            ))}
-          </ul>
-        </>
-      );
-    }
-    if (activeTab === 'users') {
-      return (
-        <>
-          <h2>Users ({users.length})</h2>
-          <ul style={{ columns: '2', columnGap: '30px' }}>
-            {users.map(u => (
-              <li key={u.user_id}><strong>{u.name}</strong> – {u.email}</li>
+              <li key={s.show_id} style={{ padding: '8px', borderBottom: '1px solid #eee' }}>
+                Show #{s.show_id} – Screen {s.screen_id} – Movie ID {s.movie_id} – {s.show_datetime}
+              </li>
             ))}
           </ul>
         </>
@@ -115,24 +97,25 @@ function CinemaTabs() {
     if (activeTab === 'seats') {
       return (
         <div>
-          <h3>Select a Show</h3>
-          <select value={selectedShowId} onChange={e => setSelectedShowId(e.target.value)} style={{ marginBottom: '20px', padding: '8px' }}>
+          <h3>💺 Select a Show to see Seat Availability</h3>
+          <select value={selectedShowId} onChange={e => setSelectedShowId(e.target.value)}
+                  style={{ marginBottom: '20px', padding: '8px', width: '100%', maxWidth: '300px' }}>
             <option value="">-- Choose a show --</option>
             {shows.map(show => (
               <option key={show.show_id} value={show.show_id}>
-                Show #{show.show_id} (Movie ID {show.movie_id}) – {show.show_datetime}
+                Show #{show.show_id} – {show.show_datetime}
               </option>
             ))}
           </select>
           {selectedShowId && (
             <>
-              <h3>Seat Availability for Show #{selectedShowId}</h3>
+              <h4>Seat Layout</h4>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(10, 40px)', gap: '5px', maxHeight: '400px', overflowY: 'auto' }}>
                 {seats.map(seat => (
                   <div key={seat.show_seat_id}
                        style={{
                          width: '40px', height: '40px',
-                         backgroundColor: seat.is_available === 'True' ? 'green' : 'red',
+                         backgroundColor: seat.is_available === 'True' ? '#28a745' : '#dc3545',
                          color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center',
                          fontSize: '12px', borderRadius: '4px'
                        }}
@@ -141,23 +124,10 @@ function CinemaTabs() {
                   </div>
                 ))}
               </div>
-              <p>Green = Available, Red = Booked</p>
+              <p style={{ marginTop: '10px' }}>🟢 Available &nbsp;|&nbsp; 🔴 Booked</p>
             </>
           )}
         </div>
-      );
-    }
-    if (activeTab === 'bookings') {
-      return (
-        <>
-          <h2>Bookings ({bookings.length})</h2>
-          <ul>
-            {bookings.slice(0, 100).map(b => (
-              <li key={b.booking_id}>Booking #{b.booking_id} | User {b.user_id} | Show {b.show_id} | ₹{b.total_cost} | {b.booking_datetime}</li>
-            ))}
-            {bookings.length > 100 && <li>... and {bookings.length - 100} more</li>}
-          </ul>
-        </>
       );
     }
     if (activeTab === 'food') {
@@ -167,35 +137,36 @@ function CinemaTabs() {
   };
 
   return (
-    <div style={{ padding: '20px' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h1>🎬 Cinema Management System</h1>
+    <div style={{ padding: '20px', maxWidth: '1200px', margin: 'auto' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid #ccc', paddingBottom: '10px' }}>
+        <h1 style={{ margin: 0 }}>🎬 Cinema</h1>
         <div>
           {user ? (
             <>
-              <span>Welcome, {user.name} ({user.is_admin ? 'Admin' : 'Customer'})</span>
-              <button onClick={logout} style={{ marginLeft: '10px', padding: '8px 16px', background: '#dc3545', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>Logout</button>
+              <span>Welcome, {user.name} 👋</span>
+              <button onClick={logout} style={{ marginLeft: '10px', padding: '6px 14px', background: '#dc3545', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>Logout</button>
             </>
           ) : (
-            <button onClick={() => navigate('/login')} style={{ padding: '8px 16px', background: '#007bff', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>Login / Register</button>
+            <button onClick={() => navigate('/login')} style={{ padding: '6px 14px', background: '#007bff', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>Login / Register</button>
           )}
         </div>
       </div>
-      <div style={{ marginBottom: '20px' }}>
-        <Link to="/"><button style={{ marginRight: '10px', padding: '8px 16px', background: '#007bff', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>Home</button></Link>
-        {['shows', 'users', 'seats', 'bookings', 'food'].map(tab => (
+
+      <div style={{ margin: '20px 0' }}>
+        {['movies', 'shows', 'seats', 'food'].map(tab => (
           <button key={tab}
                   onClick={() => setActiveTab(tab)}
                   style={{
-                    marginRight: '10px', padding: '8px 16px',
-                    backgroundColor: activeTab === tab ? '#007bff' : '#e0e0e0',
-                    color: activeTab === tab ? 'white' : 'black',
+                    marginRight: '10px', padding: '8px 18px',
+                    backgroundColor: activeTab === tab ? '#007bff' : '#f0f0f0',
+                    color: activeTab === tab ? 'white' : '#333',
                     border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '16px'
                   }}>
-            {tab.toUpperCase()}
+            {tab.charAt(0).toUpperCase() + tab.slice(1)}
           </button>
         ))}
       </div>
+
       {error && <p style={{ color: 'red' }}>{error}</p>}
       {loading && <p>Loading...</p>}
       {!loading && !error && renderContent()}
@@ -205,9 +176,7 @@ function CinemaTabs() {
 
 function ProtectedRoute({ children }) {
   const { user } = useAuth();
-  if (!user) {
-    return <Navigate to="/login" replace />;
-  }
+  if (!user) return <Navigate to="/login" replace />;
   return children;
 }
 

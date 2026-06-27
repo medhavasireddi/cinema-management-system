@@ -22,13 +22,9 @@ function Register() {
     } catch (err) {
       const detail = err.response?.data?.detail;
       let errorMsg = 'Registration failed';
-      if (typeof detail === 'string') {
-        errorMsg = detail;
-      } else if (Array.isArray(detail) && detail.length > 0) {
-        errorMsg = detail.map(e => e.msg).join(', ');
-      } else if (detail && typeof detail === 'object' && detail.msg) {
-        errorMsg = detail.msg;
-      }
+      if (typeof detail === 'string') errorMsg = detail;
+      else if (Array.isArray(detail) && detail.length) errorMsg = detail.map(e => e.msg).join(', ');
+      else if (detail && typeof detail === 'object' && detail.msg) errorMsg = detail.msg;
       setError(errorMsg);
       setSuccess('');
     }

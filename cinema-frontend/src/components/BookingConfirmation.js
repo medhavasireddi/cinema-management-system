@@ -3,51 +3,58 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth } from '../context/AuthContext';
 
+const API_BASE_URL = 'https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net';
+
 function BookingConfirmation() {
-  const { state } = useLocation();
-  const { showId, selectedSeats, totalSeats } = state || {};
+  const location = useLocation();
+  const navigate = useNavigate();
   const { user } = useAuth();
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
-  const [bookingId, setBookingId] = useState(null);
-  const navigate = useNavigate();
+  const [error, setError] = useState('');
 
-  if (!state) {
-    return <p>No booking data. Please start over.</p>;
-  }
+  const { showId, selectedSeatIds } = location.state || {};
 
-  const pricePerSeat = 150;
-  const totalCost = totalSeats * pricePerSeat;
-
-  const confirmBooking = async () => {
+  const handleConfirm = async () => {
+    if (!showId || !selectedSeatIds || selectedSeatIds.length === 0) {
+      setError('Invalid booking data.');
+      return;
+    }
     setLoading(true);
+    setError('');
     try {
-      const res = await axios.post('http://https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/bookings/create', {
+      const res = await axios.post(`${API_BASE_URL}/bookings/create`, {
         user_id: user.user_id,
         show_id: showId,
-        selected_seat_ids: selectedSeats
+        selected_seat_ids: selectedSeatIds
+      }, {
+        headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
-      setBookingId(res.data.booking_id);
-      setMessage(`✅ Booking successful! Booking ID: ${res.data.booking_id}, Total: ₹${res.data.total_cost}`);
+      setMessage(`Booking confirmed! Booking ID: ${res.data.booking_id}, Total: ₹${res.data.total_cost}`);
       setTimeout(() => navigate('/'), 3000);
     } catch (err) {
-      setMessage('❌ Booking failed: ' + (err.response?.data?.error || 'Unknown error'));
+      setError('Booking failed. Please try again.');
     } finally {
       setLoading(false);
     }
   };
 
+  if (!showId || !selectedSeatIds) {
+    return <p>Invalid booking data. Please go back and try again.</p>;
+  }
+
   return (
-    <div style={{ maxWidth: '500px', margin: 'auto', padding: '20px' }}>
-      <h2>Booking Summary</h2>
+    <div style={{ padding: '20px' }}>
+      <h2>Confirm Booking</h2>
       <p><strong>Show ID:</strong> {showId}</p>
-      <p><strong>Number of seats:</strong> {totalSeats}</p>
-      <p><strong>Price per seat:</strong> ₹{pricePerSeat}</p>
-      <p><strong>Total:</strong> ₹{totalCost}</p>
-      <button onClick={confirmBooking} disabled={loading} style={{ padding: '10px 20px', background: '#28a745', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '16px' }}>
-        {loading ? 'Processing...' : 'Confirm & Pay'}
+      <p><strong>Selected seats:</strong> {selectedSeatIds.length}</p>
+      <p><strong>Total price:</strong> ₹{selectedSeatIds.length * 150}</p>
+      {error && <p style={{ color: 'red' }}>{error}</p>}
+      {message && <p style={{ color: 'green' }}>{message}</p>}
+      <button onClick={handleConfirm} disabled={loading}
+              style={{ padding: '8px 16px', background: '#007bff', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
+        {loading ? 'Processing...' : 'Confirm Booking'}
       </button>
-      {message && <p style={{ marginTop: '20px', padding: '10px', background: bookingId ? '#d4edda' : '#f8d7da', borderRadius: '4px' }}>{message}</p>}
     </div>
   );
 }
