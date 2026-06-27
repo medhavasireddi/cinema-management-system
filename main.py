@@ -16,10 +16,10 @@ app = FastAPI()
 # ✅ CORS Middleware – allow all origins for testing
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://purple-plant-052683800.7.azurestaticapps.net"],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
-    allow_credentials=True,          # <-- added this for extra compatibility
 )
 
 app.include_router(auth_router)
