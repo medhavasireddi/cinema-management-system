@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useAuth } from '../context/AuthContext';
 
+const API_BASE_URL = 'https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net';
+
 function FoodOrdering() {
   const [foodItems, setFoodItems] = useState([]);
   const [foodSizes, setFoodSizes] = useState([]);
@@ -16,8 +18,8 @@ function FoodOrdering() {
     const fetchFood = async () => {
       try {
         const [itemsRes, sizesRes] = await Promise.all([
-          axios.get('http://127.0.0.1:8000/fooditems'),
-          axios.get('http://127.0.0.1:8000/fooditemsizes')
+          axios.get(`${API_BASE_URL}/fooditems`),
+          axios.get(`${API_BASE_URL}/fooditemsizes`)
         ]);
         setFoodItems(itemsRes.data);
         setFoodSizes(sizesRes.data);
@@ -33,7 +35,7 @@ function FoodOrdering() {
 
   const fetchMyOrders = async () => {
     try {
-      const res = await axios.get('http://127.0.0.1:8000/food/orders/my', {
+      const res = await axios.get(`${API_BASE_URL}/food/orders/my`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setMyOrders(res.data);
@@ -60,9 +62,7 @@ function FoodOrdering() {
     setCart(newCart);
   };
 
-  const getTotal = () => {
-    return cart.reduce((sum, item) => sum + item.rate, 0);
-  };
+  const getTotal = () => cart.reduce((sum, item) => sum + item.rate, 0);
 
   const placeOrder = async () => {
     if (!user) {
@@ -79,7 +79,7 @@ function FoodOrdering() {
       quantity: item.quantity
     }));
     try {
-      const res = await axios.post('http://127.0.0.1:8000/food/order', { items: orderItems }, {
+      const res = await axios.post(`${API_BASE_URL}/food/order`, { items: orderItems }, {
         headers: { Authorization: `Bearer ${token}` }
       });
       setOrderMessage(`✅ Order placed! Order ID: ${res.data.order_id}, Total: ₹${res.data.total}`);
@@ -96,8 +96,7 @@ function FoodOrdering() {
 
   return (
     <div>
-      <h2>Food Menu</h2>
-      
+      <h2>🍿 Food Menu</h2>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '20px' }}>
         {foodItems.map(item => (
           <div key={item.item_id} style={{ border: '1px solid #ddd', padding: '15px', borderRadius: '8px' }}>
@@ -109,10 +108,8 @@ function FoodOrdering() {
               {foodSizes.filter(s => s.item_id === item.item_id).map(size => (
                 <li key={size.size_id} style={{ marginBottom: '8px' }}>
                   <strong>{size.size_name}</strong> – ₹{size.rate}
-                  <button 
-                    onClick={() => addToCart(item.item_id, size.size_id, size.size_name, size.rate)}
-                    style={{ marginLeft: '10px', padding: '4px 12px', background: '#28a745', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
-                  >
+                  <button onClick={() => addToCart(item.item_id, size.size_id, size.size_name, size.rate)}
+                          style={{ marginLeft: '10px', padding: '4px 12px', background: '#28a745', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
                     Add
                   </button>
                 </li>
@@ -122,21 +119,16 @@ function FoodOrdering() {
         ))}
       </div>
 
-      {/* Cart Section */}
       <div style={{ marginTop: '30px', borderTop: '2px solid #ddd', paddingTop: '20px' }}>
         <h2>🛒 Your Cart</h2>
-        {cart.length === 0 ? (
-          <p>Cart is empty.</p>
-        ) : (
+        {cart.length === 0 ? <p>Cart is empty.</p> : (
           <>
             <ul style={{ listStyle: 'none', padding: 0 }}>
               {cart.map((item, index) => (
                 <li key={index} style={{ padding: '8px', borderBottom: '1px solid #eee' }}>
                   {item.name} ({item.size_name}) – ₹{item.rate}
-                  <button 
-                    onClick={() => removeFromCart(index)}
-                    style={{ marginLeft: '10px', padding: '2px 10px', background: '#dc3545', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}
-                  >
+                  <button onClick={() => removeFromCart(index)}
+                          style={{ marginLeft: '10px', padding: '2px 10px', background: '#dc3545', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>
                     Remove
                   </button>
                 </li>
@@ -144,10 +136,8 @@ function FoodOrdering() {
             </ul>
             <h3>Total: ₹{getTotal()}</h3>
             {user ? (
-              <button 
-                onClick={placeOrder}
-                style={{ padding: '10px 20px', background: '#007bff', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '16px' }}
-              >
+              <button onClick={placeOrder}
+                      style={{ padding: '10px 20px', background: '#007bff', color: 'white', border: 'none', borderRadius: '4px', cursor: 'pointer', fontSize: '16px' }}>
                 Place Order
               </button>
             ) : (
@@ -158,13 +148,10 @@ function FoodOrdering() {
         )}
       </div>
 
-      {/* My Orders */}
       {user && (
         <div style={{ marginTop: '30px', borderTop: '2px solid #ddd', paddingTop: '20px' }}>
-          <h2>📦 My Food Orders</h2>
-          {myOrders.length === 0 ? (
-            <p>No orders yet.</p>
-          ) : (
+          <h2>📦 My Orders</h2>
+          {myOrders.length === 0 ? <p>No orders yet.</p> : (
             <ul>
               {myOrders.map(order => (
                 <li key={order.order_id} style={{ borderBottom: '1px solid #eee', padding: '10px 0' }}>
