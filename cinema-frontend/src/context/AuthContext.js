@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     if (token) {
-      axios.get('http://127.0.0.1:8000/auth/me', {
+      axios.get('https://cinema-backend-h2dshubncabkcdfp.centralindia-01.azurewebsites.net/auth/me', {
         headers: { Authorization: `Bearer ${token}` }
       }).then(res => {
         setUser(res.data);
