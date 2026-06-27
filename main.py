@@ -1,11 +1,11 @@
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from sqlalchemy import create_engine, Column, Integer, String, Float, ForeignKey, DateTime, Boolean
+from sqlalchemy import create_engine, Column, Integer, String, Float, ForeignKey, DateTime
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker, Session, relationship
+from sqlalchemy.orm import sessionmaker, Session
 from auth import router as auth_router, get_current_user
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import List
 from datetime import datetime
 import csv
 import os
@@ -13,16 +13,18 @@ import pandas as pd
 
 app = FastAPI()
 
+# ✅ CORS Middleware – allow all origins for testing
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
+    allow_credentials=True,          # <-- added this for extra compatibility
 )
 
 app.include_router(auth_router)
 
-# Use environment variable for database URL (fallback to SQLite)
+# Database setup
 DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./cinema.db")
 engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False} if "sqlite" in DATABASE_URL else {})
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
@@ -106,14 +108,13 @@ class FoodItemSize(Base):
     size_name = Column(String)
     rate = Column(Float)
 
-# NEW: Food Order models
 class FoodOrder(Base):
     __tablename__ = "foodorders"
     order_id = Column(Integer, primary_key=True)
     user_id = Column(Integer)
     order_datetime = Column(DateTime, default=datetime.utcnow)
     total_amount = Column(Float)
-    status = Column(String, default="Pending")  # Pending, Completed, Cancelled
+    status = Column(String, default="Pending")
 
 class FoodOrderItem(Base):
     __tablename__ = "foodorderitems"
@@ -189,7 +190,6 @@ import_csv_if_exists(Movie, "movie.csv", 6, movie_mapper)
 import_csv_if_exists(Show, "show.csv", 4, show_mapper)
 import_csv_if_exists(Ticket, "ticket.csv", 7, ticket_mapper)
 
-# Special import for users (deduplicate emails)
 db = SessionLocal()
 if db.query(User).count() == 0:
     print("Importing user.csv...")
@@ -294,7 +294,6 @@ def get_fooditemsizes():
     db.close()
     return [{"size_id": fs.size_id, "item_id": fs.item_id, "size_name": fs.size_name, "rate": fs.rate} for fs in data]
 
-# ==================== BOOKING ENDPOINT ====================
 class BookingRequest(BaseModel):
     user_id: int
     show_id: int
@@ -305,7 +304,6 @@ def create_booking(booking_req: BookingRequest):
     db = SessionLocal()
     price_per_seat = 150
     total_cost = len(booking_req.selected_seat_ids) * price_per_seat
-
     new_booking = Booking(
         user_id=booking_req.user_id,
         show_id=booking_req.show_id,
@@ -314,7 +312,6 @@ def create_booking(booking_req: BookingRequest):
     )
     db.add(new_booking)
     db.flush()
-
     for show_seat_id in booking_req.selected_seat_ids:
         show_seat = db.query(ShowSeat).filter(ShowSeat.show_seat_id == show_seat_id).first()
         if show_seat and show_seat.is_available == "True":
@@ -332,7 +329,6 @@ def create_booking(booking_req: BookingRequest):
             db.rollback()
             db.close()
             return {"error": f"Seat {show_seat_id} is already booked or invalid"}
-
     db.commit()
     db.close()
     return {
@@ -342,9 +338,8 @@ def create_booking(booking_req: BookingRequest):
         "seats_booked": len(booking_req.selected_seat_ids)
     }
 
-# ==================== FOOD ORDER ENDPOINTS ====================
 class FoodOrderRequest(BaseModel):
-    items: List[dict]  # each dict: {"food_item_id": int, "size_id": int, "quantity": int}
+    items: List[dict]
 
 @app.post("/food/order")
 def place_food_order(order: FoodOrderRequest, current_user: User = Depends(get_current_user)):
@@ -401,7 +396,6 @@ def get_my_orders(current_user: User = Depends(get_current_user)):
     db.close()
     return result
 
-# ==================== ADMIN ENDPOINTS ====================
 @app.get("/admin/stats")
 def admin_stats(current_user: User = Depends(get_current_user)):
     if current_user.is_admin != 1:
